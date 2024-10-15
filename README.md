@@ -7,6 +7,37 @@ If you are using this dataset, consider citing the related paper:
 
 `Placeholder for a paper, will appear as soon as it is published :>`
 
+## Dataset details
+This dataset contains sceens from road cameras (mainly highway cameras)
+with cars classified into vehicles (class 0), and trucks (class 1). Overall, it contains 3,812 scenes with 91,843 images.
+To avoid problems with very small cars, the areas where such cars appear are covered with grey recangles.
+
+<img src="images/example.jpg"> 
+
+The detailed data split looks as follows:
+
+#### Total
+- Total number of images: 3,812
+- Total number of objects: 91,843
+- Total objects per class:
+    - Class 0 (vehicle): 70,963
+    - Class 1 (truck): 20,880
+
+#### Train subset
+- Number of images: 3,650
+- Number of objects: 86,261
+- Objects per class:
+    - Class 0 (vehicle): 66,473
+    - Class 1 (truck): 19,788
+
+#### Test subset
+- Number of images: 162
+- Number of objects: 5,582
+- Objects per class:
+    - Class 0 (vehicle): 4,490
+    - Class 1 (truck): 1,092
+
+
 ## Installation
 1. Download this repository
 2. Create your own conda environment, e.g:
@@ -20,8 +51,7 @@ conda activate HighwayDataset
 pip install -r requirements.txt
 ```
 
-
-## What's inside
+## Files
 - `Browse_hf_dataset.ipnb` - A notebook that helps browsing the dataset.
 - `create_yolo_dataset.py` - Code that changes HuggingFace dataset into a format acceptable for [Ultralytics](https://github.com/ultralytics/ultralytics) library.  
 - `train_yolo.py` - finetunes `Yolo11n` model.
