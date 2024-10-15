@@ -1,0 +1,7 @@
+# data_config.yaml
+
+train: yolo_dataset/images/train
+val: yolo_dataset/images/val 
+
+nc: 2  # Number of classes (e.g., COCO dataset has 80 classes)
+names: ['vehicle', 'truck']  # List of class names
