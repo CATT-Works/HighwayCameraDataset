@@ -8,9 +8,9 @@ If you are using this dataset, consider citing the related paper:
 `Placeholder for a paper, will appear as soon as it is published :>`
 
 ## Dataset details
-This dataset contains sceens from road cameras (mainly highway cameras)
-with cars classified into vehicles (class 0), and trucks (class 1). Overall, it contains 3,812 scenes with 91,843 images.
-To avoid problems with very small cars, the areas where such cars appear are covered with grey recangles.
+This dataset contains scenes from road cameras (mainly highway cameras)
+with cars classified into vehicles (class 0), and trucks (class 1). Overall, it contains 3,812 scenes with 91,843 objects.
+To avoid problems with very small cars, the areas where such cars appear are covered with grey rectangles.
 
 <img src="images/example.jpg"> 
 
